@@ -1,0 +1,20 @@
+{
+  "name": "discord-phishing-links",
+  "version": "0.0.1",
+  "description": "A simple Package that adds functionality with Discord Tokkenloggers Links",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolaischunk/discord-phishing-links.git"
+  },
+  "keywords": ["discord"],
+  "author": "chillihero <chilliheroyt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikolaischunk/discord-phishing-links/issues"
+  },
+  "homepage": "https://github.com/nikolaischunk/discord-phishing-links#readme"
+}
