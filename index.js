@@ -1,12 +1,16 @@
 module.exports = {
   checkMessage: function (message) {
-    let domains = require("./lib/domain-list");
-    const susDomainsChecker = (arg) =>
-      domains.some((domains) => arg.includes(domains));
-    const susDomainsArgs = message.toLowerCase().split(/ +/);
-    const susDomainsMatching = susDomainsArgs.filter(susDomainsChecker);
+    let suspiciousDomains = require("./lib/domain-list");
+    const suspiciousDomainsChecker = (arg) =>
+      suspiciousDomains.some((suspiciousDomains) =>
+        arg.includes(suspiciousDomains)
+      );
+    const suspiciousDomainsArgs = message.toLowerCase().split(/ +/);
+    const suspiciousDomainsMatching = suspiciousDomainsArgs.filter(
+      suspiciousDomainsChecker
+    );
     console.log(`REQUEST`, message);
-    return susDomainsMatching.length ? true : false;
+    return suspiciousDomainsMatching.length ? true : false;
   },
   list: function () {
     let domains = require("./lib/domain-list");
